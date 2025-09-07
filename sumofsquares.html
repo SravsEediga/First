@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>SumofSquares</h3>
+</body>
+<script>
+    const numbers = [1, 2, 3, 4, 5, 6];
+    const sumOfSquares = numbers
+            .filter(n => n % 2 === 0)        // Keep even numbers
+            .map(n => n * n)                // Square each even number
+            .reduce((sum, n) => sum + n, 0); // Sum them up
+    document.write("Sum of squares of even numbers: " + sumOfSquares);
+</script>
+</html>
